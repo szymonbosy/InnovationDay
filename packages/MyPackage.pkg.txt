@@ -1,0 +1,17 @@
+CREATE OR REPLACE PACKAGE my_package AS
+   PROCEDURE my_procedure(p_param1 NUMBER);
+   FUNCTION calculate_sum(x NUMBER, y NUMBER) RETURN NUMBER;
+END my_package;
+/
+CREATE OR REPLACE PACKAGE BODY my_package AS
+   PROCEDURE my_procedure(p_param1 NUMBER) IS
+   BEGIN
+      -- Implementation code...
+   END my_procedure;
+
+   FUNCTION calculate_sum(x NUMBER, y NUMBER) RETURN NUMBER IS
+   BEGIN
+      -- Implementation code...
+   END calculate_sum;
+   -- Other implementation details...
+END my_package;
